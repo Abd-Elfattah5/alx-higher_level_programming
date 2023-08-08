@@ -10,4 +10,3 @@ def uppercase(str):
         else:
             print("{:c}".format(ord(str[i]) - num), end='')
 
-uppercase("mynameISwenny")
