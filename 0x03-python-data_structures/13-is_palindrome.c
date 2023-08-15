@@ -29,7 +29,10 @@ int is_palindrome(listint_t **head)
 	while (i != j && i < j)
 	{
 		if (values[i] != values[j])
+		{
+			free(values);
 			return (0);
+		}
 		i++;
 		j--;
 	}
