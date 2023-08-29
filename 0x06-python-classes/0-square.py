@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-""" defining my first class """
+"""Defines a class Square."""
+
+
+
 class Square:
     """this is a Square class to do calculations"""
     pass
