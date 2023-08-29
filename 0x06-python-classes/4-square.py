@@ -22,14 +22,12 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = size
 
-
     @property
     def size(self):
         """ a size getter
             Return (type: int): the size of the instance
         """
         return (self.__size)
-
 
     @size.setter
     def size(self, value):
@@ -47,4 +45,3 @@ class Square:
         """ calculating square area
             Return (type: int): the area of the square"""
         return (self.__size ** 2)
-
