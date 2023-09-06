@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-This module defines the a Rectangle Object.
-"""
+"""Create a Rectangle class."""
 
 
 class Rectangle:
