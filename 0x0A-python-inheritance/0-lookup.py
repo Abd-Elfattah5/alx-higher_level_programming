@@ -2,7 +2,7 @@
 
 def lookup(obj):
     """ function to return all the object attributes
-        
+
         Args:
             obj (unknown): some object to retreive its attributes
 
