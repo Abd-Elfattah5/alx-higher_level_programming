@@ -11,4 +11,4 @@ def lookup(obj):
         Return:
             dictionary: all the object attributes
     """
-    return (obj)
+    return (obj.__dict__)
