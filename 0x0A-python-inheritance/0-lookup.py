@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """this a lookup module """
+
+
 def lookup(obj):
     """ function to return all the object attributes
 
