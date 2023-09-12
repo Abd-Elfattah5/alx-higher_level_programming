@@ -5,6 +5,7 @@
 Rectangle = __import__('9-rectangle').Rectangle
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
+
 class Square(Rectangle):
     """square class inherits form rectangle"""
 
