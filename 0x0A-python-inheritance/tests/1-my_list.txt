@@ -1,8 +1,8 @@
 ===========================================
-the ``1-my_list`` module
+'1-my_list' test
 ===========================================
 
-Using ``MyList``
+'MyList' class
 ------------------
 
 Import the class:
