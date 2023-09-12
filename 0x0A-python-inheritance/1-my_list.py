@@ -8,4 +8,4 @@ class MyList(list):
         """ a function to print MyList sorted"""
         my_list = self[:]
         my_list.sort()
-        print(my_list))
+        print(my_list)
