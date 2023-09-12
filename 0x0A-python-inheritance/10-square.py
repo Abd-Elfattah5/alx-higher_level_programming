@@ -2,8 +2,8 @@
 """module 10-square to create square out of Rectangle"""
 
 
-Rectangle = __import__('7-Rectangle').Rectangle
-
+Rectangle = __import__('9-rectangle').Rectangle
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 class Square(Rectangle):
     """square class inherits form rectangle"""
@@ -15,6 +15,7 @@ class Square(Rectangle):
             - size: squre length
         """
         self.integer_validator("size", size)
+        super().__init__(size, size)
         self.__size = size
 
     def area(self):
