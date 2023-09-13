@@ -10,4 +10,4 @@ def write_file(filename="", text=""):
             text (str): the message to write
     """
     with open(filename, 'w', encoding='utf-8') as my_file:
-        my_file.write(text)
+        return (my_file.write(text))
