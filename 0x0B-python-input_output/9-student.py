@@ -1,4 +1,4 @@
-#!/usr/bin/pytnon3
+#!/usr/bin/python3
 """class module for a student class"""
 
 
