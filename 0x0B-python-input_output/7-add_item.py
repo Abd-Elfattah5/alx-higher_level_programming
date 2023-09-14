@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+""" this module to retrieve and add data"""
+
 
 import sys
 from os import path
