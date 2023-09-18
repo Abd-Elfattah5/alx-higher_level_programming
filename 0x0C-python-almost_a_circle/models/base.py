@@ -81,7 +81,6 @@ class Base:
             Return: the new obj with updated values
         """
         if dictionary and dictionary != {}:
-            print("class_name = {}".format(cls.__name__))
             if cls.__name__ == "Rectangle":
                 obj = cls(1, 1)
             else:
