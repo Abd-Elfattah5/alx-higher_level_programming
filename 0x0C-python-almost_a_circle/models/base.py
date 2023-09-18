@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """this module is for base class creation"""
+
 import json
 import turtle
 import csv
@@ -124,6 +125,7 @@ class Base:
                 writer = csv.DictWriter(my_file, fieldnames=fields)
                 for obj in list_objs:
                     writer.writerow(obj.to_dictionary())
+
     @classmethod
     def load_from_file_csv(cls):
         """function to read from a csv file
@@ -141,7 +143,7 @@ class Base:
                 fields = ["id", "size", "x", "y"]
             string_readed = csv.DictReader(my_file, fieldnames=fields)
             list_dicts = [dict([k, int(v)] for k, v in d.items())
-                         for d in string_readed]
+                          for d in string_readed]
             return [cls.create(**d) for d in list_dicts]
         return []
 
