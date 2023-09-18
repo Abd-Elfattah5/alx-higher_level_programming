@@ -133,18 +133,20 @@ class Base:
                 cls (cls): the class of list should be returned
             Return: a list of objects from the csv file
         """
-        name = cls.__name__ + ".csv"
+        try:
+            name = cls.__name__ + ".csv"
 
-        with open(name, "r", newline="") as my_file:
-            if cls.__name__ == "Rectangle":
-                fields = ["id", "width", "height", "x", "y"]
-            else:
-                fields = ["id", "size", "x", "y"]
-            string_readed = csv.DictReader(my_file, fieldnames=fields)
-            list_dicts = [dict([k, int(v)] for k, v in d.items())
-                          for d in string_readed]
-            return [cls.create(**d) for d in list_dicts]
-        return []
+            with open(name, "r", newline="") as my_file:
+                if cls.__name__ == "Rectangle":
+                    fields = ["id", "width", "height", "x", "y"]
+                else:
+                    fields = ["id", "size", "x", "y"]
+                string_readed = csv.DictReader(my_file, fieldnames=fields)
+                list_dicts = [dict([k, int(v)] for k, v in d.items())
+                              for d in string_readed]
+                return [cls.create(**d) for d in list_dicts]
+        except Exception:
+            return []
 
     @staticmethod
     def draw(list_rectangles, list_squares):
