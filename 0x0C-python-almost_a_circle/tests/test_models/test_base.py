@@ -5,6 +5,7 @@ import sys
 import unittest
 import pycodestyle
 import json
+import models
 from models.base import Base
 from models.rectangle import Rectangle
 from models.square import Square
@@ -50,6 +51,7 @@ class TestBase(unittest.TestCase):
 
     def test_documentation(self):
         """every function has a documentation"""
+        self.assertIsNotNone(models.base.__doc__)
         self.assertIsNotNone(Base.__doc__)
         self.assertIsNotNone(Base.__init__.__doc__)
         self.assertIsNotNone(Base.to_json_string.__doc__)
