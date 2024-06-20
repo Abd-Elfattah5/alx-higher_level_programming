@@ -40,7 +40,7 @@ module.exports = class Square extends Rectangle {
         console.log(star);
       }
     } else {
-      super.print();
+      this.print();
     }
   }
 };
