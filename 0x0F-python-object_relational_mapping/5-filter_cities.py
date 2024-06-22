@@ -24,6 +24,6 @@ if __name__ == '__main__':
 
     cur.execute(qry)
     data = [e[0] for e in cur.fetchall()]
-    print(*data, sep=',')
+    print(*data, sep=', ')
     cur.close()
     db.close()
