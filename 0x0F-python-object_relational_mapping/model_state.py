@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """ module for state class to link to sqlalchemy"""
 
 from sqlalchemy.ext.declarative import declarative_base
