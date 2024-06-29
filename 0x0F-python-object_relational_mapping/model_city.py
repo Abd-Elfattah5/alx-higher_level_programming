@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """ module for state class to link to sqlalchemy"""
 
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, ForeignKey
 from model_state import Base
 
 
