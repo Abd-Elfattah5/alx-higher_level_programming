@@ -11,7 +11,8 @@ request(url, (err, response, body) => {
     movies.forEach((movie) => {
       const actors = movie.characters;
       actors.forEach((actor) => {
-        if (actor === 'https://swapi-api.alx-tools.com/api/people/18/') {
+        const id = actor.split('/')[5];
+        if (id === '18') {
           num += 1;
         }
       });
