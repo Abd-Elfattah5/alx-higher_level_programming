@@ -2,12 +2,15 @@
 
 const url = process.argv[2];
 const request = require('request');
-const emp = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0 };
 
 request(url, (err, response, body) => {
   if (!err && response.statusCode === 200) {
     const info = JSON.parse(body);
+    const emp = {};
     for (const task of info) {
+      if (task.completed && !emp[task.userId]) {
+        emp[task.userId] = 0;
+      }
       if (task.completed === true) {
         emp[Number(task.userId)] += 1;
       }
